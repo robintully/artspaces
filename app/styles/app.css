@@ -1,0 +1,72 @@
+html, body {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.borders:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 5px solid #ffea00;
+}
+
+div#side-nav {
+  height:100vh;
+  background-color: black;
+  color: white;
+  margin:0;
+}
+
+#testing{
+   border:5px solid black;
+}
+
+.container-fluid {
+  padding:0px;
+  margin:0;
+}
+
+/*.row {
+  height:33.333333333333vh;
+  border:1px dotted orange;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}*/
+
+.col-md-4 {
+  height:33.3333333vh;
+  border:5px solid black;
+    outline: 5px solid white;
+/*  border:1px dashed green;*/
+/*  padding-left: 10px;
+  padding-right: 10px;
+*/}
+
+.col-md-3 {
+  height:33.3333333vh;
+  
+  border:5px solid black;
+    outline: 5px solid white;
+/*  border:1px dashed green;*/
+/*  padding-left: 10px;
+  padding-right: 10px;
+*/}
+
+
+.col-md-12 {
+  height:100%;
+/*  border:1px dashed green;*/
+/*  padding-left: 10px;
+  padding-right: 10px;*/
+}
+
+
+h1{
+  font-size:52pt;
+}
