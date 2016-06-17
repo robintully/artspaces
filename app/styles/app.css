@@ -5,68 +5,43 @@ html, body {
    padding: 0;
 }
 
-.borders:before {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border: 5px solid #ffea00;
-}
-
-div#side-nav {
-  height:100vh;
-  background-color: black;
-  color: white;
-  margin:0;
-}
-
-#testing{
-   border:5px solid black;
-}
-
 .container-fluid {
   padding:0px;
   margin:0;
 }
 
-/*.row {
-  height:33.333333333333vh;
-  border:1px dotted orange;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}*/
-
 .col-md-4 {
   height:33.3333333vh;
   border:5px solid black;
-    outline: 5px solid white;
-/*  border:1px dashed green;*/
-/*  padding-left: 10px;
-  padding-right: 10px;
-*/}
+  outline: 5px solid white;
+}
 
 .col-md-3 {
   height:33.3333333vh;
-  
   border:5px solid black;
-    outline: 5px solid white;
-/*  border:1px dashed green;*/
-/*  padding-left: 10px;
-  padding-right: 10px;
-*/}
-
+  outline: 5px solid white;
+}
 
 .col-md-12 {
   height:100%;
-/*  border:1px dashed green;*/
-/*  padding-left: 10px;
-  padding-right: 10px;*/
 }
 
-
-h1{
+h1.sick-logo{
   font-size:52pt;
+}
+
+.art-block {
+  padding:0;
+}
+.art-info {
+  display:inline-block;
+  position:absolute;
+  top:0;
+  left:0;
+  padding:0;
+  background-color:white;
+  opacity: .95;
+  width:100%;
+  height:100%;
+  border: 1px solid yellow;
 }

@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('welcome');
-  this.route('space');
+  this.route('spaces');
   this.route('arts')
 });
 
