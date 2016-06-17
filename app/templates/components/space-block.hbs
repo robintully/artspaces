@@ -1,5 +1,6 @@
-<div class="col-md-4 art-block" style="text-align:center">
+<div class="col-md-4 art-block" style="text-align:center;">
 {{#if hovered}}
+  <span class="helper"></span>
   <img src="{{thing.img_link}}" style="max-width:95%;max-height:95%">
   <span class="art-info">
     <h3>{{thing.name}}</h3>
@@ -7,6 +8,7 @@
     <p>{{thing.description}}</p>
   </span>
 {{else}}
+  <span class="helper"></span>
   <img src="{{thing.img_link}}" style="max-width:95%;max-height:95%">
 {{/if}}
 </div>

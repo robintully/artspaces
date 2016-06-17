@@ -10,6 +10,9 @@ html, body {
   margin:0;
 }
 
+#side-nav {
+}
+
 .col-md-4 {
   height:33.3333333vh;
   border:5px solid black;
@@ -31,7 +34,7 @@ h1.sick-logo{
 }
 
 .art-block {
-  padding:0;
+  padding:5px;
 }
 .art-info {
   display:inline-block;
@@ -44,4 +47,10 @@ h1.sick-logo{
   width:100%;
   height:100%;
   border: 1px solid yellow;
+}
+
+.helper {
+  display: inline-block;
+  height:100%;
+  vertical-align:middle;
 }
