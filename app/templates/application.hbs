@@ -7,7 +7,7 @@
   <h1 class="sick-logo"> Art Space</h1>
 {{link-to "Art!" "arts" class="btn btn-default btn-lg btn-block"}}
 {{link-to "Space!" "spaces" class="btn btn-default btn-lg btn-block"}}
-{{login-form}}
+{{login-form triggerAuthenticate=(action "authenticate") errorMessage=errorMessage}}
   
  </div>
 
