@@ -1,20 +1,25 @@
-<div class="container-fluid" id="main-container" style="height:100vh">
+<div class="container-fluid" id="main-container"> 
 
 
-  <div class="col-md-3" id="side-nav" style='height:100vh; background-color: black; color: white;'>
+  <div class="col-md-3" id="side-nav">
 
-
-  <h1 class="sick-logo"> Art Space</h1>
-{{link-to "Art!" "arts" class="btn btn-default btn-lg btn-block"}}
-{{link-to "Space!" "spaces" class="btn btn-default btn-lg btn-block"}}
-{{login-form triggerAuthenticate=(action "authenticate") errorMessage=errorMessage}}
+  <div class="col-md-12 side logo">
+    <h1 class="sick-logo"> Art Space</h1>
+  </div>
+  <div class="col-md-12 side">
+  {{link-to "Art!" "arts" class="btn btn-default btn-lg btn-block"}}
+  {{link-to "Space!" "spaces" class="btn btn-default btn-lg btn-block"}}
+  </div>
+  <div class="col-md-12 side">
+  {{login-form triggerAuthenticate=(action "authenticate") errorMessage=errorMessage}}
+  </div>
   
  </div>
 
 
 
 
-     <div class="col-md-9">  
+     <div class="col-md-9" id="right-main">  
       {{outlet}}
     </div>
 
