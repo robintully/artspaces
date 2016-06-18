@@ -4,19 +4,49 @@
   <div class="col-md-3" id="side-nav" style='height:100vh; background-color: black; color: white;'>
 
 
-  <h1 class="sick-logo"> Art Space</h1>
-{{link-to "Art!" "arts" class="btn btn-default btn-lg btn-block"}}
-{{link-to "Space!" "spaces" class="btn btn-default btn-lg btn-block"}}
-{{login-form triggerAuthenticate=(action "authenticate") errorMessage=errorMessage}}
-  
+    <h1 class="sick-logo"> Art Space</h1>
+    {{link-to "Art!" "arts" class="btn btn-default btn-lg btn-block"}}
+    {{link-to "Space!" "spaces" class="btn btn-default btn-lg btn-block"}}  
+    <p></p>
+    <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#login">Log In</button>
+    <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#signup">Sign Up</button>
+  </div>
+
+
+
+
+  <!-- Modal for Login -->
+  <div id="login" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal-body">
+         {{login-form triggerAuthenticate=(action "authenticate") errorMessage=errorMessage}}
+       </div>
+     </div>
+   </div>
+ </div>
+
+  <!-- Modal for Login -->
+  <div id="signup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal-body">
+        working?
+        
+       </div>
+     </div>
+   </div>
  </div>
 
 
 
-
-     <div class="col-md-9">  
-      {{outlet}}
-    </div>
+ <div class="col-md-9">  
+  {{outlet}}
+</div>
 
 
 
