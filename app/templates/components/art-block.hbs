@@ -4,7 +4,13 @@
   <span class="helper"></span>
 <img src="{{thing.img_link}}" style="max-width:95%;max-height:95%">
   <span class="art-info">
-    <h3>{{thing.name}}</h3>
+
+  {{#link-to "arts.art" thing.id}}
+<h3> <a data-toggle="modal" href="#modal">{{thing.name}}</a></h3>
+ {{/link-to}}
+
+
+  
     <p>{{thing.description}}</p>
     <p>by {{thing.user.name}}</p>
   </span>
