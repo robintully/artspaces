@@ -55,18 +55,21 @@ html, body {
 h1.sick-logo{
   font-size:52pt;
   position:absolute;
-  bottom:0;
+  bottom:-5px;
+  left:0px;
 }
 
 .art-block {
   padding:15px;
+  display:flex;
+  overflow:hidden;
 }
 .art-info {
   display:inline-block;
   position:absolute;
-  top:0;
-  left:0;
-  padding:0;
+  top:15px;
+  left:15px;
+  padding:15px;
   background-color:white;
   opacity: .95;
   width:100%;
@@ -80,7 +83,7 @@ h1.sick-logo{
 }
 
 .grid-image {
-  max-width:100%;
+  flex:0;
+  min-height:100%;
   min-width:100%;
-}
 }
