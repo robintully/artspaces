@@ -1,8 +1,7 @@
-<div class="col-md-4 art-block" style="text-align:center;
-    ">
+<div class="col-md-4 art-block" style="text-align:center;">
 {{#if hovered}}
-  <span class="helper"></span>
-<img src="{{thing.img_link}}" style="max-width:95%;max-height:95%">
+  {{!-- <span class="helper"></span> --}}
+  <img src="{{thing.img_link}}" class="grid-image" style="object-fit:cover">
   <span class="art-info">
 
   {{#link-to "arts.art" thing.id}}
@@ -15,7 +14,7 @@
     <p>by {{thing.user.name}}</p>
   </span>
 {{else}}
-  <span class="helper"></span>
-  <img src="{{thing.img_link}}" style="max-width:95%;max-height:95%">
+  {{!-- <span class="helper"></span> --}}
+  <img src="{{thing.img_link}}" class="grid-image" style="object-fit:cover">
 {{/if}}
 </div>
