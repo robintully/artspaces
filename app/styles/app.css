@@ -87,3 +87,7 @@ h1.sick-logo{
   min-height:100%;
   min-width:100%;
 }
+
+.modal-header {
+  border:0px;
+}
