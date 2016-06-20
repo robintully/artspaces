@@ -3,7 +3,7 @@
   {{!-- <span class="helper"></span> --}}
   <img src="{{thing.img_link}}" class="grid-image">
   <span class="art-info">
-    <h3>{{thing.name}}</h3>
+    {{#link-to 'spaces.space' thing.id}}<h3>{{thing.name}}</h3>{{/link-to}}
     <p>{{thing.location}}</p>
     <p>{{thing.description}}</p>
   </span>
