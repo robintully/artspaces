@@ -1,10 +1,88 @@
-<div class="col-md-4 art-block">
-<h2>User info</h2>
-{{sessionAccount.account.name}}
+<div class="col-md-4 art-block text-center">
+<div class='center-block'> 
+ <h1>Name:  {{sessionAccount.account.name}}</h1>
 </div>
+</div>
+
+
+
+<div class="col-md-4 art-block text-center">
+<div class='center-block'> 
+ <h1>Email:  {{sessionAccount.account.email}}</h1>
+</div>
+</div>
+
 <div class="col-md-4 art-block">
-<h2>Arts</h2>
-{{#each sessionAccount.account.spaces as |art|}}
-{{art.name}}
+<p>Thanks for using our website, please visit again later for our next version "What's that smell?"</p>
+</div>
+
+
+<div class="col-md-4 art-block">
+<div class ="col-md-2"><h2 style="-webkit-transform: rotate(-90deg);;margin-top: 35%;">Art</h2></div>
+<div class ="col-md-10">
+<ul>
+{{#each sessionAccount.account.arts as |art|}}
+<li>
+
+  {{#link-to "arts.art" art.id}}
+<h4> {{art.name}} </h4>
+ {{/link-to}}
+
+</li>
 {{/each}}
+</ul>
 </div>
+</div>
+
+
+
+
+
+<div class="col-md-4 art-block">
+{{#each sessionAccount.account.arts as |art|}}
+<img src="{{art.img_link}}" style=" width:100%;">
+{{/each}}
+
+</div>
+
+
+<div class="col-md-4 art-block">
+
+</div>
+
+
+
+<div class="col-md-4 art-block">
+<div class ="col-md-2"><h2 style="-webkit-transform: rotate(-90deg);;margin-top: 75px;">Spaces</h2></div>
+<div class ="col-md-10">
+<ul>
+{{#each sessionAccount.account.spaces as |space|}}
+<li>
+ {{#link-to "spaces.space" space.id}}
+<h4> {{space.name}} </h4>
+ {{/link-to}}
+</li>
+{{/each}}
+</ul>
+</div>
+</div>
+
+
+
+
+<div class="col-md-4 art-block">
+
+</div>
+
+
+
+<div class="col-md-4 art-block">
+
+{{#each sessionAccount.account.spaces as |space|}}
+<img src="{{space.img_link}}" style=" width:100%;">
+{{/each}}
+
+</div>
+
+
+
