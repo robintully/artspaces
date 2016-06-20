@@ -13,10 +13,16 @@
     {{link-to "Add Art" "new-art" class="btn btn-default btn-lg btn-block"}}
 </div>
 <div class="col-md-12 side">
+  <br><br><br>
+  {{#if session.isAuthenticated}}
+    <p>Hello {{sessionAccount.account.name}}</p>
+    <p><a href="#" {{action 'invalidateSession'}}>Logout</a></p>
 
+  {{else}}
     <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#login">Log In</button>
     <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#signup">Sign Up</button>
-    <br><br><br>
+  {{/if}}
+   <br>
     {{outlet 'pagenav'}}
   </div>
   </div>
@@ -45,10 +51,11 @@
   <div class="modal-dialog">
     <!-- Modal content-->
     <div class="modal-content">
+    <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
       <div class="modal-body">
-        working?
-        
+        {{signup-form user=model triggerSave=(action "save") errorMessage=errorMessage}}
       </div>
     </div>
   </div>

@@ -1,15 +1,16 @@
 import Ember from 'ember';
 
+const { service } = Ember.inject;
+
 export default Ember.Route.extend({
+  sessionAccount: service('session-account'),
 
-model (){
+  beforeModel() {
+    return this._loadCurrentUser();
+  },
 
-  return this.store.findAll('currentuser');
-}
-
-// model(){
-
-//       return this.store.findAll('currentuser') 
-// },
+  _loadCurrentUser() {
+    return this.get('sessionAccount').loadCurrentUser();
+  }
 
 });
