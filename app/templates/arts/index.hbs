@@ -1,0 +1,18 @@
+{{#each model as |art|}}
+ {{art-block thing=art}}
+{{/each}}
+
+
+  <div id="modal" class="modal fade" role="dialog">
+    <div class="modal-dialog show-modal">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+         {{outlet}}
+       </div>
+     </div>
+   </div>
+ </div>

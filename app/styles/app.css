@@ -18,7 +18,6 @@ html, body {
 
 #side-nav {
   height:100vh;
-  background-color:light;
   color:black;
   padding-right:0;
 }
@@ -27,11 +26,34 @@ html, body {
   padding-left:0;
 }
 
-.col-md-4 {
-  height:33.3333333vh;
-  border:0px;
+#left-show {
+  height:100vh;
+  padding-left:0;
+  padding-right:0;
+}
+
+#image-show {
+  height:66.666666vh;
   outline: 1px solid lightblue;
   outline-offset: 12px;
+  padding-left:0;
+}
+
+.show-page-img {
+  position:absolute;
+  bottom:15px;
+  left:15px;
+  max-width:100%;
+  max-height:100%;
+}
+
+.display-name {
+  margin-bottom:0;
+  padding-left
+}
+
+.col-md-4 {
+  border:0px;
 }
 
 .col-md-3 {
@@ -61,9 +83,13 @@ h1.sick-logo{
 }
 
 .art-block {
+  height:33.3333333vh;
   padding:15px;
   display:flex;
   overflow:hidden;
+  text-align:center;
+  outline: 1px solid lightblue;
+  outline-offset: 12px;
 }
 .art-info {
   display:inline-block;
@@ -80,7 +106,19 @@ h1.sick-logo{
 .helper {
   display: inline-block;
   height:100%;
-  vertical-align:middle;
+  vertical-align:bottom;
+}
+
+.valign-helper {
+  display:table;
+  width:100%;
+  height:100%;
+}
+.valign-cell {
+  display:table-cell;
+  vertical-align: bottom;
+  text-align:left;
+  padding-left:3px;
 }
 
 .grid-image {
@@ -92,3 +130,13 @@ h1.sick-logo{
 .modal-header {
   border:0px;
 }
+
+/*art and space show modals*/
+
+.modal-dialog.show-modal {
+  width:800px;
+  max-width:95%;
+}
+.modal-content {
+}
+

@@ -1,9 +1,22 @@
-<h2> {{model.name}}
+<div class="col-md-4" id="left-show">
+  <div class="art-block" style="vertical-align:bottom">
+    <div class="valign-helper">
+      <div class="valign-cell">
+        <h2 class="display-name">{{model.name}}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="art-block">
+  </div>
+  <div class="art-block">
+  </div>
+</div>
 
-</h2>
-Description: {{model.description}}
-<img src="{{model.img_link}} ">
+<div class="col-md-8" id="image-show">
+<img src="{{model.img_link}}" class="show-page-img">
+</div>
 
-{{outlet}}
-
-
+<div class="col-md-4 art-block">
+</div>
+<div class="col-md-4 art-block">
+</div>
