@@ -1,5 +1,10 @@
-{{log model}}
-{{log model.user}}
-{{#each}}
-{{log this}}
+<div class="col-md-4 art-block">
+<h2>User info</h2>
+{{sessionAccount.account.name}}
+</div>
+<div class="col-md-4 art-block">
+<h2>Arts</h2>
+{{#each sessionAccount.account.spaces as |art|}}
+{{art.name}}
 {{/each}}
+</div>
