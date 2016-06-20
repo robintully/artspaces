@@ -1,0 +1,28 @@
+<div class="col-md-6">
+  <form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+    <label for="name" class="col-lg-2 control-label">Title</label>
+    <div class="col-lg-10">
+      {{input value=model.name id="name"}}
+    </div>
+      </div>
+
+    <div class="form-group">
+    <label for="img_link" class="col-lg-2 control-label">Image Link</label>  
+    <div class="col-lg-10">
+      {{input value=model.img_link id="img_link"}}
+    </div>
+    </div>
+
+    <div class="form-group">
+    <label for="description" class="col-lg-2 control-label">Description</label>
+    <div class="col-lg-10">
+      {{textarea value=model.description id="description"}}
+    </div>
+      </div>
+
+    <button id="submit" class="btn btn-primary" {{action 'save' model}}>Save</button>
+  </fieldset>
+  </form>
+</div>

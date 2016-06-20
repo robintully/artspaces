@@ -4,17 +4,20 @@
   <div class="col-md-3" id="side-nav">
 
   <div class="col-md-12 side logo">
-    <h1 class="sick-logo"> Art Space</h1>
+    {{#link-to 'application'}}<h1 class="sick-logo"> Art Space</h1>{{/link-to}}
   </div>
     <div class="col-md-12 side">
     {{link-to "All the Art!" "arts" class="btn btn-default btn-lg btn-block"}}
     {{link-to "All the Space!" "spaces" class="btn btn-default btn-lg btn-block"}}
     {{link-to "My Profile!" "profile" class="btn btn-default btn-lg btn-block"}}  
+    {{link-to "Add Art" "new-art" class="btn btn-default btn-lg btn-block"}}
 </div>
 <div class="col-md-12 side">
 
     <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#login">Log In</button>
     <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#signup">Sign Up</button>
+    <br><br><br>
+    {{outlet 'pagenav'}}
   </div>
   </div>
 
@@ -53,7 +56,7 @@
 
 
 <div class="col-md-9" id="right-main">  
-  {{outlet}}
+  {{outlet 'main'}}
 </div>
 
 

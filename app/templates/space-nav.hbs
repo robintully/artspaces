@@ -1,0 +1,3 @@
+{{#each-in model.meta.pagination as |key value|}}
+  {{link-to key "spaces" (query-params page=value.number)}}
+{{/each-in}}
