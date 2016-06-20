@@ -6,7 +6,6 @@ export default Ember.Route.extend({
   },
     actions: {
     save: function(art) {
-      var pleasework = this
       art.save().then(() => {
         this.redirect('art', this.transitionTo('arts'));
       }).catch((e) => {
