@@ -1,3 +1,7 @@
+  Navigation
+  <br>
+  <div class="col-xs-12" style="padding-right: 6%;padding-left: 0%;">
 {{#each-in model.meta.pagination as |key value|}}
   {{link-to key "spaces" (query-params page=value.number)}}
 {{/each-in}}
+</div>

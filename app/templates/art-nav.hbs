@@ -1,3 +1,7 @@
+  Navigation
+  <br>
+  <div class="col-xs-12" style="padding-right: 6%;padding-left: 0%;">
 {{#each-in model.meta.pagination as |key value|}}
-  {{link-to key "arts" (query-params page=value.number)}}
+  {{link-to key "arts" (query-params page=value.number) class="btn btn-default btn-sm btn-block"}}
 {{/each-in}}
+</div>
