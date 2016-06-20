@@ -20,11 +20,7 @@ Router.map(function() {
   });
   this.route('profile');
   this.route('new-art');
-  this.route('showart', function() {
-    this.route('art', {
-      path: ':art_id'
-    });
-  });
+  
 
  
 });
