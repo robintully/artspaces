@@ -13,7 +13,7 @@
 </div>
 
 <div class="col-md-4 art-block">
-<p>Thanks for using our website, please visit again later for our next version "What's that smell?"</p>
+<p>Thanks for using our website</p>
 </div>
 
 
@@ -39,9 +39,8 @@
 
 
 <div class="col-md-4 art-block">
-{{#each sessionAccount.account.arts as |art|}}
-<img src="{{art.img_link}}" style=" width:100%;">
-{{/each}}
+
+<img src="{{sessionAccount.account.arts.firstObject.img_link}}" style=" width:100%;">
 
 </div>
 
@@ -77,10 +76,8 @@
 
 
 <div class="col-md-4 art-block">
+<img src="{{sessionAccount.account.spaces.firstObject.img_link}}" style=" width:100%;">
 
-{{#each sessionAccount.account.spaces as |space|}}
-<img src="{{space.img_link}}" style=" width:100%;">
-{{/each}}
 
 </div>
 
