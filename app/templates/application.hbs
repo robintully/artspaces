@@ -18,7 +18,6 @@
 
 <div class="col-md-12 side" style="padding-right: 8%;padding-left: 2%;padding-top: 10%;">
   {{#if session.isAuthenticated}}
-    <br><br>
     <p>Hello {{sessionAccount.account.name}} </p>
     <div class="col-xs-12" style="padding-right: 0%;padding-left: 0%;">
       {{bs-button class="btn btn-default btn-sm btn-block" action="invalidateSession" text="Log Out"}}
