@@ -10,25 +10,26 @@
 <div class="col-md-12">
   <form class="form-horizontal">
   <fieldset>
-    <div class="form-group">
-    <label for="name" class="col-md-2">Title</label>
-    <div class="col-md-10">
-      {{input value=model.name id="name"}}
+    <legend>Add new art</legend>
+    <div class="form-group-sm">
+    <label for="name" class="col-lg-3 control-label">Title</label>
+    <div class="col-lg-9">
+      {{input value=model.name id="name" class="form-control"}}
     </div>
       </div>
 
-    <div class="form-group">
-    <label for="img_link" class="col-md-2">Image URL</label>  
-    <div class="col-md-10">
-      {{input value=model.img_link id="img_link"}}
+    <div class="form-group-sm">
+    <label for="img_link" class="col-lg-3 control-label">Image URL</label>  
+    <div class="col-lg-9">
+      {{input value=model.img_link id="img_link" class="form-control"}}
     </div>
     </div>
 
 
-    <div class="form-group">
-    <label for="description" class="col-md-2 ">Description</label>
-    <div class="col-md-10">
-      {{textarea value=model.description id="description"}}
+    <div class="form-group-sm">
+    <label for="description" class="col-lg-3 control-label">Description</label>
+    <div class="col-lg-9">
+      {{textarea value=model.description id="description" class="form-control"}}
     </div>
       </div>
 

@@ -146,3 +146,12 @@ h1.sick-logo{
   display:inline-block;
 }
 
+legend {
+  text-align:left;
+}
+
+.form-group-sm .col-lg-9{
+  padding-top:3px;
+  padding-bottom:3px;
+}
+
