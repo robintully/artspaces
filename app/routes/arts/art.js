@@ -15,5 +15,13 @@ export default Ember.Route.extend({
 
   model(params) {
     return this.store.findRecord('art', params["art_id"]);
-  }
-});
+  },
+ actions: {
+   delete(resource) {
+     resource.deleteRecord();
+     resource.save();
+     this.transitionTo('arts');
+   }
+ }
+ });
+>>>>>>> origin/master
