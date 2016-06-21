@@ -24,4 +24,4 @@ export default Ember.Route.extend({
    }
  }
  });
->>>>>>> origin/master
+
