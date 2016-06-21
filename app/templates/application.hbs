@@ -4,42 +4,37 @@
   <div class="col-md-3" id="side-nav">
 
   <div class="col-md-12 side logo">
-    {{#link-to 'application'}}<h1 class="sick-logo"> Art Space</h1>{{/link-to}}
+    {{#link-to 'application'}}<h1 class="sick-logo">Art Space</h1>{{/link-to}}
   </div>
     <div class="col-md-12 side" style="padding-right: 8%;padding-left: 2%;padding-top: 10%;">
     {{link-to "All the Art!" "arts" class="btn btn-default btn-md btn-block" }}
     {{link-to "All the Space!" "spaces" class="btn btn-default btn-md btn-block"}}
     {{link-to "My Profile!" "profile" class="btn btn-default btn-md btn-block"}}  
-    {{link-to "Add Art" "new-art" class="btn btn-default btn-md btn-block"}}
-     {{link-to "Add Space" "new-art" class="btn btn-default btn-md btn-block"}}
+    {{link-to "Add Art" "new-art" class="btn btn-default btn-md btn-block btn-half"}}
+     {{link-to "Add Space" "new-art" class="btn btn-default btn-md btn-block btn-half"}}
 </div>
 
 
 
-<div class="col-md-12 side" style="padding-top:0;">
+<div class="col-md-12 side" style="padding-right: 8%;padding-left: 2%;padding-top: 10%;">
   {{#if session.isAuthenticated}}
-  <br><br>
+    <br><br>
     <p>Hello {{sessionAccount.account.name}} </p>
-  <div class="col-xs-12" style="padding-right: 6%;padding-left: 0%;">
-  {{bs-button class="btn btn-default btn-sm btn-block" action="invalidateSession" text="Log Out"}}
-  </div>
+    <div class="col-xs-12" style="padding-right: 6%;padding-left: 0%;">
+      {{bs-button class="btn btn-default btn-sm btn-block" action="invalidateSession" text="Log Out"}}
+    </div>
 
   {{else}}
 
 
-  <div class="col-md-12">
-    <div class="col-md-6">
-    <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#login">Log In</button>
-    </div>
-      <div class="col-md-6">
-    <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#signup">Sign Up</button>
-    </div>
-    </div>
+      <button type="button" class="btn btn-default btn-lg btn-half" data-toggle="modal" data-target="#login">Log In</button>
+      <button type="button" class="btn btn-default btn-lg btn-half" data-toggle="modal" data-target="#signup">Sign Up</button>
+
   {{/if}}
-   <br>
-   <br>
+
+
     {{outlet 'pagenav'}}
-  </div>
+    </div>
   </div>
 
 

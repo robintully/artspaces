@@ -3,20 +3,24 @@
     <div class="valign-helper">
       <div class="valign-cell">
         <h2 class="display-name">{{model.name}}</h2>
+        <br>
+        <h3 class="display-name">by {{model.user.name}}</h3>
       </div>
     </div>
   </div>
   <div class="art-block show-block">
     <div class="valign-helper">
       <div class="valign-cell" style="vertical-align:top">
-        <h3 class="display-name">by {{model.user.name}}</h3>
+        <h3 class="display-name">Description: </h3>
+        <br>
+        <p>{{model.description}}</p>
       </div>
     </div>
   </div>
   <div class="art-block">
     <div class="valign-helper">
       <div class="valign-cell" style="vertical-align:top">
-        <p>Description: {{model.description}}</p>
+        
       </div>
     </div>
   </div>

@@ -140,12 +140,8 @@ h1.sick-logo{
   border:0px;
 }
 
-/*art and space show modals*/
-
-.modal-dialog.show-modal {
-  width:800px;
-  max-width:95%;
-}
-.modal-content {
+.btn-half {
+  width: calc(50% - 2px);
+  display:inline-block;
 }
 
