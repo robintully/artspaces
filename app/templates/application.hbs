@@ -9,16 +9,17 @@
     <div class="col-md-12 side" style="padding-right: 8%;padding-left: 2%;padding-top: 10%;">
     {{link-to "All the Art!" "arts" class="btn btn-default btn-md btn-block" }}
     {{link-to "All the Space!" "spaces" class="btn btn-default btn-md btn-block"}}
-    {{link-to "My Profile!" "profile" class="btn btn-default btn-md btn-block"}}  
-    {{link-to "Add Art" "new-art" class="btn btn-default btn-md btn-block btn-half"}}
-     {{link-to "Add Space" "spaces.new" class="btn btn-default btn-md btn-block btn-half"}}
+    {{#if session.isAuthenticated}}
+      {{link-to "My Profile!" "profile" class="btn btn-default btn-md btn-block"}}  
+      {{link-to "Add Art" "new-art" class="btn btn-default btn-md btn-block btn-half"}}
+      {{link-to "Add Space" "spaces.new" class="btn btn-default btn-md btn-block btn-half"}}
+    {{/if}}
 </div>
 
 
 
 <div class="col-md-12 side" style="padding-right: 8%;padding-left: 2%;padding-top: 10%;">
   {{#if session.isAuthenticated}}
-    <p>Hello {{sessionAccount.account.name}} </p>
     <div class="col-xs-12" style="padding-right: 0%;padding-left: 0%;">
       {{bs-button class="btn btn-default btn-sm btn-block" action="invalidateSession" text="Log Out"}}
     </div>
