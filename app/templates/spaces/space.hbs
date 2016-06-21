@@ -28,8 +28,9 @@
 </div>
 
 <div class="col-md-4 art-block">
-
+ {{#if (if-equal sessionAccount.account.id model.user.id ) }} 
   {{edit-space saveChanges=(action "update") space=model}}
+{{/if}}
 </div>
 <div class="col-md-4 art-block">
  {{#if (if-equal sessionAccount.account.id model.user.id ) }} 
