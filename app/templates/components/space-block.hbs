@@ -1,7 +1,7 @@
 <div class="col-md-4 art-block" style="text-align:center;">
 {{#if hovered}}
   {{!-- <span class="helper"></span> --}}
-  <img src="{{thing.img_link}}" class="grid-image">
+  <img src="{{thing.img_link}}" class="grid-image" style="object-fit:cover">
   <span class="art-info">
     {{#link-to 'spaces.space' thing.id}}<h3>{{thing.name}}</h3>{{/link-to}}
     <p>{{thing.location}}</p>
@@ -9,6 +9,6 @@
   </span>
 {{else}}
   {{!-- <span class="helper"></span> --}}
-  <img src="{{thing.img_link}}" class="grid-image">
+  <img src="{{thing.img_link}}" class="grid-image" style="object-fit:cover">
 {{/if}}
 </div>
