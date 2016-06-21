@@ -1,7 +1,35 @@
+
 <p><button class='btn btn-default btn-md btn-block'  {{action 'edit' model}}>Edit</button></p>
 {{#if isEditing}}
-<h4>{{input value=art.name id="name"}}</h4>
-<p>{{input value=art.img_link id="img-link"}}</p>
-<p>{{input value=art.description id="description"}}</p>
-<button id="submit" {{action 'submit' art}}>Submit</button>
+
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+    <label for="name" class="col-lg-2 control-label">Name</label>
+    <div class="col-lg-10">
+      {{input value=art.name id="name"}}
+    </div>
+      </div>
+
+    <div class="form-group">
+    <label for="description" class="col-lg-2 control-label">description</label>  
+    <div class="col-lg-10">
+      {{input value=art.description id="description"}}
+    </div>
+    </div>
+
+    <div class="form-group">
+    <label for="img_link" class="col-lg-2 control-label">Link</label>  
+    <div class="col-lg-10">
+      {{input value=art.img_link id="img_link"}}
+    </div>
+    </div>
+
+<button id="submit" class='btn btn-default btn-md btn-block' {{action 'submit' art}}>Submit</button>
+ 
+  </fieldset>
+  </form>
 {{/if}}
+{{yield}}
+
+

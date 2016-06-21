@@ -1,8 +1,40 @@
 <p><button class='btn btn-default btn-md btn-block'  {{action 'edit' model}}>Edit</button></p>
 {{#if isEditing}}
-<h4>{{input value=space.name id="name"}}</h4>
-<p>{{input value=space.img_link id="img-link"}}</p>
-<p>{{input value=space.description id="description"}}</p>
-<button id="submit" {{action 'submit' space}}>Submit</button>
+
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+    <label for="name" class="col-lg-2 control-label">Name</label>
+    <div class="col-lg-10">
+      {{input value=space.name id="name"}}
+    </div>
+      </div>
+
+    <div class="form-group">
+    <label for="location" class="col-lg-2 control-label">Location</label>  
+    <div class="col-lg-10">
+      {{input value=space.location id="location"}}
+    </div>
+    </div>
+
+    <div class="form-group">
+    <label for="img_link" class="col-lg-2 control-label">Link</label>  
+    <div class="col-lg-10">
+      {{input value=space.img_link id="img_link"}}
+    </div>
+    </div>
+
+    <div class="form-group">
+    <label for="description" class="col-lg-2 control-label">Description</label>
+    <div class="col-lg-10">
+      {{textarea value=space.description id="description"}}
+    </div>
+      </div>
+<button id="submit" class='btn btn-default btn-md btn-block' {{action 'submit' space}}>Submit</button>
+ 
+  </fieldset>
+  </form>
 {{/if}}
 {{yield}}
+
+
