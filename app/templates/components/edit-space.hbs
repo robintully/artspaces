@@ -1,0 +1,8 @@
+<p><button class='btn btn-default btn-md btn-block'  {{action 'edit' model}}>Edit</button></p>
+{{#if isEditing}}
+<h4>{{input value=space.name id="name"}}</h4>
+<p>{{input value=space.img_link id="img-link"}}</p>
+<p>{{input value=space.description id="description"}}</p>
+<button id="submit" {{action 'submit' space}}>Submit</button>
+{{/if}}
+{{yield}}
