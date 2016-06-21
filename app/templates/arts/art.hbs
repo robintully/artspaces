@@ -31,7 +31,7 @@
 </div>
 
 <div class="col-md-4 art-block">
-
+  {{edit-art saveChanges=(action "update") art=model}}
 </div>
 <div class="col-md-4 art-block">
 
@@ -39,7 +39,6 @@
 
  {{#if (if-equal sessionAccount.account.id model.user.id ) }} 
 <p><button class='btn btn-default btn-md btn-block'  {{action 'delete' model}}>Delete</button></p>
-<p><button class='btn btn-default btn-md btn-block'  {{action 'edit' model}}>Edit</button></p>
  {{/if}}
  
 
