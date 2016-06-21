@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('space', {
       path: ':space_id'
     });
+    this.route('new');
   });
   this.route('arts', function() {
     this.route('art', {
