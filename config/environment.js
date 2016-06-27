@@ -28,6 +28,8 @@ module.exports = function(environment) {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
+
+
   if (environment === 'test') {
     // Testem prefers this...
     ENV.baseURL = '/';
@@ -41,7 +43,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.host = 'https://artspaces.herokuapp.com'
   }
 
   return ENV;
