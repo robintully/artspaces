@@ -93,6 +93,8 @@ h1.sick-logo{
   outline-offset: 12px;
 }
 
+
+
 .show-block {
   padding-bottom:10px;
 }
@@ -153,5 +155,21 @@ legend {
 .form-group-sm .col-lg-9{
   padding-top:3px;
   padding-bottom:3px;
+}
+
+@media (max-width: 992px) {
+  .art-block {
+    height:66.666vh;
+  }
+  .side {
+    height:66.666vh;
+  }
+  .main-container {
+    outline: 0;
+    height: auto;
+  }
+  #side-nav {
+    height: auto ;
+  }
 }
 
